@@ -38,7 +38,7 @@ export default {
     }
   },
   methods: {
-    addSmoothie(){
+    AddSmoothie(){
       if(this.title){
         this.feedback = null
         // create a slug

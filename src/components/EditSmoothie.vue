@@ -50,7 +50,8 @@ export default {
         db.collection('smoothies').doc(this.smoothie.id).update({
           title: this.smoothie.title,
           slug: this.slug,
-          ingredients: this.smoothie.ingredients
+          ingredients: this.smoothie.ingredients,
+          slug: this.smoothie.slug
         }).then(() => {
           this.$router.push({ name: 'Index' })
         }).catch(err => {
